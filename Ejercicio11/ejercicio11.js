@@ -4,18 +4,18 @@
  * el nombre, el sexo (F = femenino, M = masculino), la edad, la estatura y el peso. */
 
  let nombre;
- let sexo;
+ let sexo = 'F';
  let edad;
  let estatura;
  let peso;
 
  nombre = prompt("Ingresa nombre: ");
  sexo = prompt("Ingresa el sexo: F o M ");
- edad = Number("Ingresa la edad: ");
- estatura = Number("Ingresa la estatura: ");
- peso = Number("Ingresa el peso: ");
+ edad = Number(prompt("Ingresa la edad: "));
+ estatura = Number(prompt("Ingresa la estatura: "));
+ peso = Number(prompt("Ingresa el peso: "));
 
- if (sexo == F || sexo == femenino) {
+ if (sexo == 'F') {
     if (edad >= 16 && estatura >= 1.70 && peso <= 60) {
         document.write("Programa dice si va al equipo de baloncesto")
     } else {
